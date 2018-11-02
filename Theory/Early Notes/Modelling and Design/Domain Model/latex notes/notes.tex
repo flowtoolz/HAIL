@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+
+\usepackage[intlimits]{amsmath}
+%\usepackage[scaled=.92]{helvet}
+%\usepackage{times}
+\usepackage{graphicx}
+%\usepackage{parskip}
+\usepackage[labelfont=bf,textfont=it]{caption}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[numbers]{natbib}
+\usepackage{multirow}
+%\usepackage[in]{fullpage}
+\usepackage{wrapfig}
+
+\title{HAIL -- Domain Model}
+\author{Sebastian Fichtner}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Domain Objects}
+
+\subsection*{PlayInfo}
+\begin{itemize}
+\item volume : float
+\item pan : float
+\item delaySeconds : float
+\item offsetSeconds : float
+\end{itemize}
+
+mixing and timing info for a play instruction
+
+\subsection*{PlayableProtocol}
+\begin{itemize}
+\item play(playInfo : PlayInfo) : void
+\item pause() : void
+\item stop() : void
+\item lengthSeconds : float
+\end{itemize}
+
+\subsection*{SchedulingAudioFile $<$PlayableProtocol$>$}
+\begin{itemize}
+\item location : URL
+\end{itemize}
+
+This audio file enqueues play instructions for future playing. play(...) can be invoked multiple times, even when the first instruction hasn't been played yet. The instructions must not overlap and must be enqueued in chronological order.
+
+\subsection*{Music $<$PlayableProtocol$>$}
+\begin{itemize}
+\item name : String
+\item baseKey : int
+\item bpm : float
+\item playInfo : PlayInfo
+\end{itemize}
+
+Has its own play info that it applies in addition to the play info it recieves. Most of the time, delay and offset will be 0.
+
+\subsection*{MusicReference : Music}
+\begin{itemize}
+\item music : Music*
+\end{itemize}
+
+\subsection*{Sample : Music}
+\begin{itemize}
+\item audioFile : SchedulingAudioFile
+\end{itemize}
+
+\subsection*{Instrument}
+\begin{itemize}
+\item name : String
+\item keyMusicReferences : MusicReference[]
+\end{itemize}
+
+\subsection*{InstrumentReference : Instrument}
+\begin{itemize}
+\item instrument : Instrument*
+\end{itemize}
+
+\subsection*{ScoreEvent}
+\begin{itemize}
+\item startTimeSeconds : float
+\item durationSeconds : float
+\item key : int
+\end{itemize}
+
+\subsection*{Score}
+\begin{itemize}
+\item name : String
+\item lengthSeconds : float
+\item bpm : float
+\item baseKey : int
+\item events : ScoreEvent[]
+\end{itemize}
+
+\subsection*{ScoreReference : Score}
+\begin{itemize}
+\item score : Score*
+\end{itemize}
+
+score reference inherits from score. it has its own name, length, bpm, baseKey and events.
+that means it transforms the referenced score to its own values. in case of the eventlist it works like that: for every event of its own, it plays the whole referenced score at the key of that event.
+
+the score reference can have invalid values for its parameters. in that case the own parameter is not applied and the parameter of the referenced score is used unaltered. if all parameters are invalid (default), the score reference is just an encapsulated pointer to a score.
+
+\subsection*{Performance : Music}
+\begin{itemize}
+\item instrument : InstrumentReference
+\item score : SoreReference
+\end{itemize}
+
+\subsection*{GroupPerformance : Music}
+\begin{itemize}
+\item performances : Performance*[]
+\end{itemize}
+
+\subsection{Note on References}
+References serve two purposes:
+\begin{itemize}
+\item Indirection: in order to built his music in a modular orthogonal nonredundant manner, the user needs to have a pointer type for the objects he uses. he uses it to bundle pointers that are supposed to point to the same object. when he wants to change or exchange that object he only has to do that once.
+\item Transformation: We also need the logic of that bundleing for mixing, and we want to be able to apply more transformations than just volume and pan adjustments.
+\end{itemize}
+
+\end{document}

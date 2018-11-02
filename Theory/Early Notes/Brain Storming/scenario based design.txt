@@ -1,0 +1,21 @@
+http://edutechwiki.unige.ch/en/Scenario-based_usability_engineering
+- descriptions of usage situations become first-class design objects
+- a scenario shows how a task would be performed with a particular design
+- scenarios are useful in problem analysis and solution projection
+- analysing user needs: people, place, processes
+- stakeholders develop scenarios together (user stories)
+- iteratively adjust scenarios by discussing them with users
+- hierarchical task analysis (subtasks…)
+
+rosson/carroll: book "usability engineering: scenario-based …"
+- scenarios highlight how users persue not only their goals but also the goals suggested by the system (p.17)
+- scenarios contain certain elements: p.18
+- scenarios are hierarchically structured: high level goal, subgoals
+- scenarios are not use cases (p.17-19)
+- scenarios (as opposed to use cases) emphasise how goals, plans and understandings change during usage
+- scenarios can be created and tested using prototypes (paper, software …)
+- usability objectives should be explicit, clear and specific (p.20)
+- scenarios are of arbitrary detail to stay flexible and cope with uncertainty
+- scenarios help balancing several trade offs (p.21)
+- the framework diagram is a waterfall but is meant to be applied iteratively
+- design phase is split into 3: activity-, information- and interaction design 

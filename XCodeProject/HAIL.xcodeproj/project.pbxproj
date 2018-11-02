@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0365381A20DF13004A9353 /* HAIL_PerformancePresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0365371A20DF13004A9353 /* HAIL_PerformancePresentation.m */; };
+		3B03653C1A20FA22004A9353 /* HAIL_ScorePresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B03653B1A20FA22004A9353 /* HAIL_ScorePresentation.m */; };
+		3B131C2C1A2A013D0015CC1E /* HAIL_PresentationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B131C2B1A2A013D0015CC1E /* HAIL_PresentationView.m */; };
+		3B2069221A2C7AD50063317B /* HAIL_PartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2069211A2C7AD50063317B /* HAIL_PartView.m */; };
+		3B2069251A2C7C3F0063317B /* HAIL_VoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2069241A2C7C3F0063317B /* HAIL_VoiceView.m */; };
+		3B3455D31A2BB51100099302 /* HAIL_EditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3455D21A2BB51100099302 /* HAIL_EditorView.m */; };
+		3B3455D61A2BD6A100099302 /* HAIL_BusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3455D51A2BD6A100099302 /* HAIL_BusinessController.m */; };
+		3B43FE7D1A3118A00098E635 /* HAIL_EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FE7C1A3118A00098E635 /* HAIL_EventView.m */; };
+		3B43FE801A3119BC0098E635 /* HAIL_EventPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FE7F1A3119BC0098E635 /* HAIL_EventPresentation.m */; };
+		3B484F451A2E3E16003A9779 /* HAIL_ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B484F441A2E3E16003A9779 /* HAIL_ScrollView.m */; };
+		3B4B775B1A225F2500387C96 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4B775A1A225F2500387C96 /* UIView+AutoLayout.m */; };
+		3B4D6D641A2C1C280091D035 /* HAIL_EditorPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6D631A2C1C280091D035 /* HAIL_EditorPresentation.m */; };
+		3B8591321A2915BD00B36D3C /* HAIL_ScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8591311A2915BD00B36D3C /* HAIL_ScoreView.m */; };
+		3B97A70719DC0758005914F6 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97A70419DC0758005914F6 /* Accelerate.framework */; };
+		3B97A70819DC0758005914F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97A70519DC0758005914F6 /* AudioToolbox.framework */; };
+		3B97A70919DC0758005914F6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97A70619DC0758005914F6 /* AVFoundation.framework */; };
+		3B97A76819DC07BF005914F6 /* HAIL_Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A70C19DC07BE005914F6 /* HAIL_Score.m */; };
+		3B97A76B19DC07BF005914F6 /* HAIL_AudioData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71219DC07BE005914F6 /* HAIL_AudioData.m */; };
+		3B97A76D19DC07BF005914F6 /* HAIL_AudioPlayerNotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71419DC07BE005914F6 /* HAIL_AudioPlayerNotificationNames.m */; };
+		3B97A76E19DC07BF005914F6 /* HAIL_BusinessLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71819DC07BE005914F6 /* HAIL_BusinessLogic.m */; };
+		3B97A76F19DC07BF005914F6 /* HAIL_Performance.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71A19DC07BE005914F6 /* HAIL_Performance.m */; };
+		3B97A77019DC07BF005914F6 /* HAIL_PresentationLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71C19DC07BE005914F6 /* HAIL_PresentationLogic.m */; };
+		3B97A77119DC07BF005914F6 /* HAIL_DomainLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71F19DC07BE005914F6 /* HAIL_DomainLogic.m */; };
+		3B97A77219DC07BF005914F6 /* HAIL_Presentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A72119DC07BE005914F6 /* HAIL_Presentation.m */; };
+		3B97A77319DC07BF005914F6 /* HAIL_ScoreLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A72319DC07BE005914F6 /* HAIL_ScoreLibrary.m */; };
+		3B97A77419DC07BF005914F6 /* HAIL_VoiceLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A72519DC07BE005914F6 /* HAIL_VoiceLibrary.m */; };
+		3B97A77519DC07BF005914F6 /* HAIL_AudioLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A72719DC07BE005914F6 /* HAIL_AudioLibrary.m */; };
+		3B97A77619DC07BF005914F6 /* HAIL_Synthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A72919DC07BE005914F6 /* HAIL_Synthesizer.m */; };
+		3B97A77819DC07BF005914F6 /* HAIL_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73019DC07BE005914F6 /* HAIL_AppDelegate.m */; };
+		3B97A77919DC07BF005914F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73119DC07BE005914F6 /* main.m */; };
+		3B97A77A19DC07BF005914F6 /* HAIL_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73319DC07BE005914F6 /* HAIL_ViewController.m */; };
+		3B97A77C19DC07BF005914F6 /* HAIL_PerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73619DC07BE005914F6 /* HAIL_PerformanceView.m */; };
+		3B97A77E19DC07BF005914F6 /* HAIL_DomainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73A19DC07BE005914F6 /* HAIL_DomainController.m */; };
+		3B97A77F19DC07BF005914F6 /* HAIL_EditingContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A73D19DC07BE005914F6 /* HAIL_EditingContainerController.m */; };
+		3B97A78019DC07BF005914F6 /* HAIL_EditingContainerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A73E19DC07BE005914F6 /* HAIL_EditingContainerController.xib */; };
+		3B97A78119DC07BF005914F6 /* HAIL_InterfaceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74019DC07BE005914F6 /* HAIL_InterfaceConfiguration.m */; };
+		3B97A78219DC07BF005914F6 /* HAIL_SynchronizedScrollContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74219DC07BE005914F6 /* HAIL_SynchronizedScrollContentView.m */; };
+		3B97A78319DC07BF005914F6 /* HAIL_KeysVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74519DC07BE005914F6 /* HAIL_KeysVC.m */; };
+		3B97A78419DC07BF005914F6 /* HAIL_KeysVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A74619DC07BE005914F6 /* HAIL_KeysVC.xib */; };
+		3B97A78519DC07BF005914F6 /* HAIL_KeysView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74819DC07BE005914F6 /* HAIL_KeysView.m */; };
+		3B97A78619DC07BF005914F6 /* HAIL_PerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74B19DC07BE005914F6 /* HAIL_PerformanceVC.m */; };
+		3B97A78719DC07BF005914F6 /* HAIL_PerformanceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A74C19DC07BE005914F6 /* HAIL_PerformanceVC.xib */; };
+		3B97A78819DC07BF005914F6 /* HAIL_PerformanceViewOLD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A74E19DC07BE005914F6 /* HAIL_PerformanceViewOLD.m */; };
+		3B97A78919DC07BF005914F6 /* HAIL_ScoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75119DC07BE005914F6 /* HAIL_ScoreVC.m */; };
+		3B97A78A19DC07BF005914F6 /* HAIL_ScoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A75219DC07BE005914F6 /* HAIL_ScoreVC.xib */; };
+		3B97A78B19DC07BF005914F6 /* HAIL_ScoreViewOLD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75419DC07BF005914F6 /* HAIL_ScoreViewOLD.m */; };
+		3B97A78C19DC07BF005914F6 /* HAIL_WheelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75719DC07BF005914F6 /* HAIL_WheelVC.m */; };
+		3B97A78D19DC07BF005914F6 /* HAIL_WheelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A75819DC07BF005914F6 /* HAIL_WheelVC.xib */; };
+		3B97A78E19DC07BF005914F6 /* HAIL_WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75A19DC07BF005914F6 /* HAIL_WheelView.m */; };
+		3B97A78F19DC07BF005914F6 /* HAIL_TAAEAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75D19DC07BF005914F6 /* HAIL_TAAEAudioFile.m */; };
+		3B97A79119DC07BF005914F6 /* HAIL_TAAEAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A76019DC07BF005914F6 /* HAIL_TAAEAudioPlayer.m */; };
+		3B97A79319DC07BF005914F6 /* FT_Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A76519DC07BF005914F6 /* FT_Helpers.m */; };
+		3B97A79419DC07BF005914F6 /* FT_TAAEAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A76719DC07BF005914F6 /* FT_TAAEAudioEngine.m */; };
+		3B97A79519DC07D6005914F6 /* HAIL_TAAEAudioFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A75E19DC07BF005914F6 /* HAIL_TAAEAudioFileTest.m */; };
+		3B97A79619DC07DA005914F6 /* HAIL_TAAEAudioPlayerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A76119DC07BF005914F6 /* HAIL_TAAEAudioPlayerTest.m */; };
+		3B97A79719DC07EE005914F6 /* HAIL_AudioDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B97A71319DC07BE005914F6 /* HAIL_AudioDataTest.m */; };
+		3B97A79919DC082F005914F6 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97A79819DC082F005914F6 /* OCHamcrestIOS.framework */; };
+		3B97A79B19DC0838005914F6 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B97A79A19DC0838005914F6 /* OCMockitoIOS.framework */; };
+		3B97A79D19DC08FE005914F6 /* audio in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A79C19DC08FE005914F6 /* audio */; };
+		3B97A7A919DC0BCB005914F6 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B97A7A819DC0BCB005914F6 /* assets.xcassets */; };
+		3BC196F11A37785E00AA6FDA /* HAIL_PartPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC196F01A37785E00AA6FDA /* HAIL_PartPresentation.m */; };
+		3BC196F41A377B4400AA6FDA /* HAIL_VoicePresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC196F31A377B4400AA6FDA /* HAIL_VoicePresentation.m */; };
+		3BC1AA621A35BE2C0033BB77 /* HAIL_Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC1AA611A35BE2C0033BB77 /* HAIL_Event.m */; };
+		3BE293F81A31CCDF00494A7E /* HAIL_PlayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE293F71A31CCDF00494A7E /* HAIL_PlayButton.m */; };
+		3BECFD2D1A156138006F77F0 /* HAIL_MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BECFD2C1A156138006F77F0 /* HAIL_MusicLibrary.m */; };
+		3BF84EE319DC0DAA001F6401 /* libTheAmazingAudioEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF84EE019DC0D9A001F6401 /* libTheAmazingAudioEngine.a */; };
+		3BF95DC01A1239E2005FB8A9 /* HAIL_Part.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF95DBF1A1239E2005FB8A9 /* HAIL_Part.m */; };
+		3BF95DC31A123F59005FB8A9 /* HAIL_Voice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF95DC21A123F59005FB8A9 /* HAIL_Voice.m */; };
+		3BFDAEA41A160477006037CB /* HAIL_PartLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFDAEA31A160477006037CB /* HAIL_PartLibrary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B97A6EB19DC064F005914F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B97A6C919DC064F005914F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B97A6D019DC064F005914F6;
+			remoteInfo = HAIL;
+		};
+		3BF84EDF19DC0D9A001F6401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF84EDB19DC0D9A001F6401 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C215CEC1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+		3BF84EE119DC0DA5001F6401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF84EDB19DC0D9A001F6401 /* TheAmazingAudioEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C215CEB1523A7D500D36CAD;
+			remoteInfo = TheAmazingAudioEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B0365371A20DF13004A9353 /* HAIL_PerformancePresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PerformancePresentation.m; sourceTree = "<group>"; };
+		3B0365391A20DF3B004A9353 /* HAIL_PerformancePresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAIL_PerformancePresentation.h; sourceTree = "<group>"; };
+		3B03653A1A20F999004A9353 /* HAIL_ScorePresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAIL_ScorePresentation.h; sourceTree = "<group>"; };
+		3B03653B1A20FA22004A9353 /* HAIL_ScorePresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_ScorePresentation.m; sourceTree = "<group>"; };
+		3B131C2B1A2A013D0015CC1E /* HAIL_PresentationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_PresentationView.m; path = UIKit/HAIL_PresentationView.m; sourceTree = "<group>"; };
+		3B131C2D1A2A015F0015CC1E /* HAIL_PresentationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_PresentationView.h; path = UIKit/HAIL_PresentationView.h; sourceTree = "<group>"; };
+		3B2069201A2C7AD50063317B /* HAIL_PartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_PartView.h; path = UIKit/HAIL_PartView.h; sourceTree = "<group>"; };
+		3B2069211A2C7AD50063317B /* HAIL_PartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_PartView.m; path = UIKit/HAIL_PartView.m; sourceTree = "<group>"; };
+		3B2069231A2C7C3F0063317B /* HAIL_VoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_VoiceView.h; path = UIKit/HAIL_VoiceView.h; sourceTree = "<group>"; };
+		3B2069241A2C7C3F0063317B /* HAIL_VoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_VoiceView.m; path = UIKit/HAIL_VoiceView.m; sourceTree = "<group>"; };
+		3B3455D11A2BB51100099302 /* HAIL_EditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_EditorView.h; path = UIKit/HAIL_EditorView.h; sourceTree = "<group>"; };
+		3B3455D21A2BB51100099302 /* HAIL_EditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_EditorView.m; path = UIKit/HAIL_EditorView.m; sourceTree = "<group>"; };
+		3B3455D41A2BD6A100099302 /* HAIL_BusinessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_BusinessController.h; sourceTree = "<group>"; };
+		3B3455D51A2BD6A100099302 /* HAIL_BusinessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_BusinessController.m; sourceTree = "<group>"; };
+		3B43FE7B1A3118A00098E635 /* HAIL_EventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_EventView.h; path = UIKit/HAIL_EventView.h; sourceTree = "<group>"; };
+		3B43FE7C1A3118A00098E635 /* HAIL_EventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_EventView.m; path = UIKit/HAIL_EventView.m; sourceTree = "<group>"; };
+		3B43FE7E1A3119BC0098E635 /* HAIL_EventPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_EventPresentation.h; sourceTree = "<group>"; };
+		3B43FE7F1A3119BC0098E635 /* HAIL_EventPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_EventPresentation.m; sourceTree = "<group>"; };
+		3B484F431A2E3E16003A9779 /* HAIL_ScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_ScrollView.h; path = "../system portfolio/HAIL_ScrollView.h"; sourceTree = "<group>"; };
+		3B484F441A2E3E16003A9779 /* HAIL_ScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_ScrollView.m; path = "../system portfolio/HAIL_ScrollView.m"; sourceTree = "<group>"; };
+		3B4B77591A225F2500387C96 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		3B4B775A1A225F2500387C96 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		3B4D6D621A2C1C280091D035 /* HAIL_EditorPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_EditorPresentation.h; path = presentation/HAIL_EditorPresentation.h; sourceTree = "<group>"; };
+		3B4D6D631A2C1C280091D035 /* HAIL_EditorPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_EditorPresentation.m; path = presentation/HAIL_EditorPresentation.m; sourceTree = "<group>"; };
+		3B8591301A29159000B36D3C /* HAIL_ScoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_ScoreView.h; path = UIKit/HAIL_ScoreView.h; sourceTree = "<group>"; };
+		3B8591311A2915BD00B36D3C /* HAIL_ScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_ScoreView.m; path = UIKit/HAIL_ScoreView.m; sourceTree = "<group>"; };
+		3B97A6D119DC064F005914F6 /* HAIL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HAIL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B97A6D519DC064F005914F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B97A6EA19DC064F005914F6 /* HAILTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HAILTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B97A6EF19DC064F005914F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B97A70419DC0758005914F6 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3B97A70519DC0758005914F6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3B97A70619DC0758005914F6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B97A70B19DC07BE005914F6 /* HAIL_Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_Score.h; sourceTree = "<group>"; };
+		3B97A70C19DC07BE005914F6 /* HAIL_Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_Score.m; sourceTree = "<group>"; };
+		3B97A71119DC07BE005914F6 /* HAIL_AudioData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_AudioData.h; path = "../application model/HAIL_AudioData.h"; sourceTree = "<group>"; };
+		3B97A71219DC07BE005914F6 /* HAIL_AudioData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_AudioData.m; path = "../application model/HAIL_AudioData.m"; sourceTree = "<group>"; };
+		3B97A71319DC07BE005914F6 /* HAIL_AudioDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_AudioDataTest.m; path = "../application model/HAIL_AudioDataTest.m"; sourceTree = "<group>"; };
+		3B97A71419DC07BE005914F6 /* HAIL_AudioPlayerNotificationNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_AudioPlayerNotificationNames.m; path = "../application model/HAIL_AudioPlayerNotificationNames.m"; sourceTree = "<group>"; };
+		3B97A71519DC07BE005914F6 /* HAIL_AudioPlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_AudioPlayerProtocol.h; path = "../application model/HAIL_AudioPlayerProtocol.h"; sourceTree = "<group>"; };
+		3B97A71619DC07BE005914F6 /* HAIL_AudioSourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_AudioSourceProtocol.h; path = "../application model/HAIL_AudioSourceProtocol.h"; sourceTree = "<group>"; };
+		3B97A71719DC07BE005914F6 /* HAIL_BusinessLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_BusinessLogic.h; sourceTree = "<group>"; };
+		3B97A71819DC07BE005914F6 /* HAIL_BusinessLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_BusinessLogic.m; sourceTree = "<group>"; };
+		3B97A71919DC07BE005914F6 /* HAIL_Performance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_Performance.h; sourceTree = "<group>"; };
+		3B97A71A19DC07BE005914F6 /* HAIL_Performance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_Performance.m; sourceTree = "<group>"; };
+		3B97A71B19DC07BE005914F6 /* HAIL_PresentationLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_PresentationLogic.h; sourceTree = "<group>"; };
+		3B97A71C19DC07BE005914F6 /* HAIL_PresentationLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PresentationLogic.m; sourceTree = "<group>"; };
+		3B97A71E19DC07BE005914F6 /* HAIL_DomainLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_DomainLogic.h; sourceTree = "<group>"; };
+		3B97A71F19DC07BE005914F6 /* HAIL_DomainLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_DomainLogic.m; sourceTree = "<group>"; };
+		3B97A72019DC07BE005914F6 /* HAIL_Presentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_Presentation.h; sourceTree = "<group>"; };
+		3B97A72119DC07BE005914F6 /* HAIL_Presentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_Presentation.m; sourceTree = "<group>"; };
+		3B97A72219DC07BE005914F6 /* HAIL_ScoreLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_ScoreLibrary.h; sourceTree = "<group>"; };
+		3B97A72319DC07BE005914F6 /* HAIL_ScoreLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_ScoreLibrary.m; sourceTree = "<group>"; };
+		3B97A72419DC07BE005914F6 /* HAIL_VoiceLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_VoiceLibrary.h; sourceTree = "<group>"; };
+		3B97A72519DC07BE005914F6 /* HAIL_VoiceLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_VoiceLibrary.m; sourceTree = "<group>"; };
+		3B97A72619DC07BE005914F6 /* HAIL_AudioLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_AudioLibrary.h; sourceTree = "<group>"; };
+		3B97A72719DC07BE005914F6 /* HAIL_AudioLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_AudioLibrary.m; sourceTree = "<group>"; };
+		3B97A72819DC07BE005914F6 /* HAIL_Synthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_Synthesizer.h; sourceTree = "<group>"; };
+		3B97A72919DC07BE005914F6 /* HAIL_Synthesizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_Synthesizer.m; sourceTree = "<group>"; };
+		3B97A72F19DC07BE005914F6 /* HAIL_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_AppDelegate.h; sourceTree = "<group>"; };
+		3B97A73019DC07BE005914F6 /* HAIL_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_AppDelegate.m; sourceTree = "<group>"; };
+		3B97A73119DC07BE005914F6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B97A73219DC07BE005914F6 /* HAIL_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_ViewController.h; path = ../HAIL_ViewController.h; sourceTree = "<group>"; };
+		3B97A73319DC07BE005914F6 /* HAIL_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_ViewController.m; path = ../HAIL_ViewController.m; sourceTree = "<group>"; };
+		3B97A73519DC07BE005914F6 /* HAIL_PerformanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_PerformanceView.h; sourceTree = "<group>"; };
+		3B97A73619DC07BE005914F6 /* HAIL_PerformanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PerformanceView.m; sourceTree = "<group>"; };
+		3B97A73919DC07BE005914F6 /* HAIL_DomainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_DomainController.h; sourceTree = "<group>"; };
+		3B97A73A19DC07BE005914F6 /* HAIL_DomainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_DomainController.m; sourceTree = "<group>"; };
+		3B97A73C19DC07BE005914F6 /* HAIL_EditingContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_EditingContainerController.h; sourceTree = "<group>"; };
+		3B97A73D19DC07BE005914F6 /* HAIL_EditingContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_EditingContainerController.m; sourceTree = "<group>"; };
+		3B97A73E19DC07BE005914F6 /* HAIL_EditingContainerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAIL_EditingContainerController.xib; sourceTree = "<group>"; };
+		3B97A73F19DC07BE005914F6 /* HAIL_InterfaceConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_InterfaceConfiguration.h; sourceTree = "<group>"; };
+		3B97A74019DC07BE005914F6 /* HAIL_InterfaceConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_InterfaceConfiguration.m; sourceTree = "<group>"; };
+		3B97A74119DC07BE005914F6 /* HAIL_SynchronizedScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_SynchronizedScrollContentView.h; sourceTree = "<group>"; };
+		3B97A74219DC07BE005914F6 /* HAIL_SynchronizedScrollContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_SynchronizedScrollContentView.m; sourceTree = "<group>"; };
+		3B97A74419DC07BE005914F6 /* HAIL_KeysVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_KeysVC.h; sourceTree = "<group>"; };
+		3B97A74519DC07BE005914F6 /* HAIL_KeysVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_KeysVC.m; sourceTree = "<group>"; };
+		3B97A74619DC07BE005914F6 /* HAIL_KeysVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAIL_KeysVC.xib; sourceTree = "<group>"; };
+		3B97A74719DC07BE005914F6 /* HAIL_KeysView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_KeysView.h; sourceTree = "<group>"; };
+		3B97A74819DC07BE005914F6 /* HAIL_KeysView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_KeysView.m; sourceTree = "<group>"; };
+		3B97A74A19DC07BE005914F6 /* HAIL_PerformanceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_PerformanceVC.h; sourceTree = "<group>"; };
+		3B97A74B19DC07BE005914F6 /* HAIL_PerformanceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PerformanceVC.m; sourceTree = "<group>"; };
+		3B97A74C19DC07BE005914F6 /* HAIL_PerformanceVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAIL_PerformanceVC.xib; sourceTree = "<group>"; };
+		3B97A74D19DC07BE005914F6 /* HAIL_PerformanceViewOLD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_PerformanceViewOLD.h; sourceTree = "<group>"; };
+		3B97A74E19DC07BE005914F6 /* HAIL_PerformanceViewOLD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PerformanceViewOLD.m; sourceTree = "<group>"; };
+		3B97A75019DC07BE005914F6 /* HAIL_ScoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_ScoreVC.h; sourceTree = "<group>"; };
+		3B97A75119DC07BE005914F6 /* HAIL_ScoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_ScoreVC.m; sourceTree = "<group>"; };
+		3B97A75219DC07BE005914F6 /* HAIL_ScoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAIL_ScoreVC.xib; sourceTree = "<group>"; };
+		3B97A75319DC07BE005914F6 /* HAIL_ScoreViewOLD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_ScoreViewOLD.h; sourceTree = "<group>"; };
+		3B97A75419DC07BF005914F6 /* HAIL_ScoreViewOLD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_ScoreViewOLD.m; sourceTree = "<group>"; };
+		3B97A75619DC07BF005914F6 /* HAIL_WheelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_WheelVC.h; sourceTree = "<group>"; };
+		3B97A75719DC07BF005914F6 /* HAIL_WheelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_WheelVC.m; sourceTree = "<group>"; };
+		3B97A75819DC07BF005914F6 /* HAIL_WheelVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HAIL_WheelVC.xib; sourceTree = "<group>"; };
+		3B97A75919DC07BF005914F6 /* HAIL_WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_WheelView.h; sourceTree = "<group>"; };
+		3B97A75A19DC07BF005914F6 /* HAIL_WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_WheelView.m; sourceTree = "<group>"; };
+		3B97A75C19DC07BF005914F6 /* HAIL_TAAEAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_TAAEAudioFile.h; path = "../application system/TAAE/HAIL_TAAEAudioFile.h"; sourceTree = "<group>"; };
+		3B97A75D19DC07BF005914F6 /* HAIL_TAAEAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_TAAEAudioFile.m; path = "../application system/TAAE/HAIL_TAAEAudioFile.m"; sourceTree = "<group>"; };
+		3B97A75E19DC07BF005914F6 /* HAIL_TAAEAudioFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_TAAEAudioFileTest.m; path = "../application system/TAAE/HAIL_TAAEAudioFileTest.m"; sourceTree = "<group>"; };
+		3B97A75F19DC07BF005914F6 /* HAIL_TAAEAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_TAAEAudioPlayer.h; path = "../application system/TAAE/HAIL_TAAEAudioPlayer.h"; sourceTree = "<group>"; };
+		3B97A76019DC07BF005914F6 /* HAIL_TAAEAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_TAAEAudioPlayer.m; path = "../application system/TAAE/HAIL_TAAEAudioPlayer.m"; sourceTree = "<group>"; };
+		3B97A76119DC07BF005914F6 /* HAIL_TAAEAudioPlayerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_TAAEAudioPlayerTest.m; path = "../application system/TAAE/HAIL_TAAEAudioPlayerTest.m"; sourceTree = "<group>"; };
+		3B97A76419DC07BF005914F6 /* FT_Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FT_Helpers.h; sourceTree = "<group>"; };
+		3B97A76519DC07BF005914F6 /* FT_Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FT_Helpers.m; sourceTree = "<group>"; };
+		3B97A76619DC07BF005914F6 /* FT_TAAEAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FT_TAAEAudioEngine.h; sourceTree = "<group>"; };
+		3B97A76719DC07BF005914F6 /* FT_TAAEAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FT_TAAEAudioEngine.m; sourceTree = "<group>"; };
+		3B97A79819DC082F005914F6 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "OCHamcrest-4.0.1/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
+		3B97A79A19DC0838005914F6 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = "OCMockito-1.3.1/OCMockitoIOS.framework"; sourceTree = "<group>"; };
+		3B97A79C19DC08FE005914F6 /* audio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = audio; path = HAIL/audio; sourceTree = "<group>"; };
+		3B97A7A819DC0BCB005914F6 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = assets.xcassets; path = HAIL/assets.xcassets; sourceTree = "<group>"; };
+		3BC196EF1A37785E00AA6FDA /* HAIL_PartPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_PartPresentation.h; path = presentation/HAIL_PartPresentation.h; sourceTree = "<group>"; };
+		3BC196F01A37785E00AA6FDA /* HAIL_PartPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_PartPresentation.m; path = presentation/HAIL_PartPresentation.m; sourceTree = "<group>"; };
+		3BC196F21A377B4400AA6FDA /* HAIL_VoicePresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_VoicePresentation.h; path = presentation/HAIL_VoicePresentation.h; sourceTree = "<group>"; };
+		3BC196F31A377B4400AA6FDA /* HAIL_VoicePresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_VoicePresentation.m; path = presentation/HAIL_VoicePresentation.m; sourceTree = "<group>"; };
+		3BC1AA601A35BE2C0033BB77 /* HAIL_Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAIL_Event.h; sourceTree = "<group>"; };
+		3BC1AA611A35BE2C0033BB77 /* HAIL_Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_Event.m; sourceTree = "<group>"; };
+		3BE293F61A31CCDF00494A7E /* HAIL_PlayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAIL_PlayButton.h; path = UIKit/HAIL_PlayButton.h; sourceTree = "<group>"; };
+		3BE293F71A31CCDF00494A7E /* HAIL_PlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_PlayButton.m; path = UIKit/HAIL_PlayButton.m; sourceTree = "<group>"; };
+		3BECFD2C1A156138006F77F0 /* HAIL_MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_MusicLibrary.m; path = "music library/HAIL_MusicLibrary.m"; sourceTree = "<group>"; };
+		3BECFD2E1A156186006F77F0 /* HAIL_MusicLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_MusicLibrary.h; path = "music library/HAIL_MusicLibrary.h"; sourceTree = "<group>"; };
+		3BF84EDB19DC0D9A001F6401 /* TheAmazingAudioEngine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TheAmazingAudioEngine.xcodeproj; path = "TheAmazingAudioEngine-master/TheAmazingAudioEngine.xcodeproj"; sourceTree = "<group>"; };
+		3BF95DBF1A1239E2005FB8A9 /* HAIL_Part.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_Part.m; path = parts/HAIL_Part.m; sourceTree = "<group>"; };
+		3BF95DC11A123A08005FB8A9 /* HAIL_Part.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_Part.h; path = parts/HAIL_Part.h; sourceTree = "<group>"; };
+		3BF95DC21A123F59005FB8A9 /* HAIL_Voice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HAIL_Voice.m; path = voices/HAIL_Voice.m; sourceTree = "<group>"; };
+		3BF95DC41A123F83005FB8A9 /* HAIL_Voice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_Voice.h; path = voices/HAIL_Voice.h; sourceTree = "<group>"; };
+		3BFDAEA31A160477006037CB /* HAIL_PartLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAIL_PartLibrary.m; sourceTree = "<group>"; };
+		3BFDAEA51A16049D006037CB /* HAIL_PartLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HAIL_PartLibrary.h; path = parts/HAIL_PartLibrary.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B97A6CE19DC064F005914F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF84EE319DC0DAA001F6401 /* libTheAmazingAudioEngine.a in Frameworks */,
+				3B97A70719DC0758005914F6 /* Accelerate.framework in Frameworks */,
+				3B97A70819DC0758005914F6 /* AudioToolbox.framework in Frameworks */,
+				3B97A70919DC0758005914F6 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B97A6E719DC064F005914F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B97A79919DC082F005914F6 /* OCHamcrestIOS.framework in Frameworks */,
+				3B97A79B19DC0838005914F6 /* OCMockitoIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0365351A20B623004A9353 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A72E19DC07BE005914F6 /* root controller */,
+				3BB47C291A2C0F2D00B4C86E /* views */,
+				3B97A73B19DC07BE005914F6 /* old experiments */,
+			);
+			name = presentation;
+			sourceTree = "<group>";
+		};
+		3B0365361A20B6BF004A9353 /* business */ = {
+			isa = PBXGroup;
+			children = (
+				3B3455D41A2BD6A100099302 /* HAIL_BusinessController.h */,
+				3B3455D51A2BD6A100099302 /* HAIL_BusinessController.m */,
+			);
+			name = business;
+			sourceTree = "<group>";
+		};
+		3B4B77581A225F2500387C96 /* UIView+AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B77591A225F2500387C96 /* UIView+AutoLayout.h */,
+				3B4B775A1A225F2500387C96 /* UIView+AutoLayout.m */,
+			);
+			name = "UIView+AutoLayout";
+			path = "UIView-Autolayout-master/Source";
+			sourceTree = "<group>";
+		};
+		3B7620FC1A17927B00D387AA /* scores */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A72219DC07BE005914F6 /* HAIL_ScoreLibrary.h */,
+				3B97A72319DC07BE005914F6 /* HAIL_ScoreLibrary.m */,
+				3B97A70B19DC07BE005914F6 /* HAIL_Score.h */,
+				3B97A70C19DC07BE005914F6 /* HAIL_Score.m */,
+				3BC1AA601A35BE2C0033BB77 /* HAIL_Event.h */,
+				3BC1AA611A35BE2C0033BB77 /* HAIL_Event.m */,
+			);
+			name = scores;
+			sourceTree = "<group>";
+		};
+		3B7620FD1A1792E000D387AA /* performance */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A71919DC07BE005914F6 /* HAIL_Performance.h */,
+				3B97A71A19DC07BE005914F6 /* HAIL_Performance.m */,
+			);
+			name = performance;
+			sourceTree = "<group>";
+		};
+		3B97A6C819DC064F005914F6 = {
+			isa = PBXGroup;
+			children = (
+				3B97A72D19DC07BE005914F6 /* application system */,
+				3B97A70A19DC07BE005914F6 /* application model */,
+				3B97A76319DC07BF005914F6 /* system portfolio */,
+				3B97A76219DC07BF005914F6 /* model portfolio */,
+				3B97A7A819DC0BCB005914F6 /* assets.xcassets */,
+				3B97A79C19DC08FE005914F6 /* audio */,
+				3B97A6D419DC064F005914F6 /* Property Lists */,
+				3B97A6D219DC064F005914F6 /* Products */,
+				3B97A7A719DC0B82005914F6 /* frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B97A6D219DC064F005914F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A6D119DC064F005914F6 /* HAIL.app */,
+				3B97A6EA19DC064F005914F6 /* HAILTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B97A6D319DC064F005914F6 /* HAIL */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A6D519DC064F005914F6 /* Info.plist */,
+			);
+			name = HAIL;
+			sourceTree = "<group>";
+		};
+		3B97A6D419DC064F005914F6 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A6D319DC064F005914F6 /* HAIL */,
+				3B97A6ED19DC064F005914F6 /* HAILTests */,
+			);
+			name = "Property Lists";
+			path = HAIL;
+			sourceTree = "<group>";
+		};
+		3B97A6ED19DC064F005914F6 /* HAILTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A6EF19DC064F005914F6 /* Info.plist */,
+			);
+			path = HAILTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		3B97A70A19DC07BE005914F6 /* application model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB47C261A2C0AB200B4C86E /* presentation */,
+				3BF95DB81A122BD3005FB8A9 /* business */,
+				3BB47C271A2C0AF500B4C86E /* domain */,
+			);
+			name = "application model";
+			path = "HAIL/src/application model";
+			sourceTree = "<group>";
+		};
+		3B97A72D19DC07BE005914F6 /* application system */ = {
+			isa = PBXGroup;
+			children = (
+				3B0365351A20B623004A9353 /* presentation */,
+				3B0365361A20B6BF004A9353 /* business */,
+				3BB47C2A1A2C0F4500B4C86E /* domain */,
+			);
+			name = "application system";
+			path = "HAIL/src/application system";
+			sourceTree = "<group>";
+		};
+		3B97A72E19DC07BE005914F6 /* root controller */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A73119DC07BE005914F6 /* main.m */,
+				3B97A72F19DC07BE005914F6 /* HAIL_AppDelegate.h */,
+				3B97A73019DC07BE005914F6 /* HAIL_AppDelegate.m */,
+				3B97A73219DC07BE005914F6 /* HAIL_ViewController.h */,
+				3B97A73319DC07BE005914F6 /* HAIL_ViewController.m */,
+			);
+			name = "root controller";
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		3B97A73B19DC07BE005914F6 /* old experiments */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A73C19DC07BE005914F6 /* HAIL_EditingContainerController.h */,
+				3B97A73D19DC07BE005914F6 /* HAIL_EditingContainerController.m */,
+				3B97A73E19DC07BE005914F6 /* HAIL_EditingContainerController.xib */,
+				3B97A73F19DC07BE005914F6 /* HAIL_InterfaceConfiguration.h */,
+				3B97A74019DC07BE005914F6 /* HAIL_InterfaceConfiguration.m */,
+				3B97A74119DC07BE005914F6 /* HAIL_SynchronizedScrollContentView.h */,
+				3B97A74219DC07BE005914F6 /* HAIL_SynchronizedScrollContentView.m */,
+				3B97A74919DC07BE005914F6 /* performance */,
+				3B97A74319DC07BE005914F6 /* keys */,
+				3B97A74F19DC07BE005914F6 /* score */,
+				3B97A75519DC07BF005914F6 /* wheel */,
+			);
+			name = "old experiments";
+			path = "interface experiments";
+			sourceTree = "<group>";
+		};
+		3B97A74319DC07BE005914F6 /* keys */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A74419DC07BE005914F6 /* HAIL_KeysVC.h */,
+				3B97A74519DC07BE005914F6 /* HAIL_KeysVC.m */,
+				3B97A74619DC07BE005914F6 /* HAIL_KeysVC.xib */,
+				3B97A74719DC07BE005914F6 /* HAIL_KeysView.h */,
+				3B97A74819DC07BE005914F6 /* HAIL_KeysView.m */,
+			);
+			path = keys;
+			sourceTree = "<group>";
+		};
+		3B97A74919DC07BE005914F6 /* performance */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A74A19DC07BE005914F6 /* HAIL_PerformanceVC.h */,
+				3B97A74B19DC07BE005914F6 /* HAIL_PerformanceVC.m */,
+				3B97A74C19DC07BE005914F6 /* HAIL_PerformanceVC.xib */,
+				3B97A74D19DC07BE005914F6 /* HAIL_PerformanceViewOLD.h */,
+				3B97A74E19DC07BE005914F6 /* HAIL_PerformanceViewOLD.m */,
+			);
+			path = performance;
+			sourceTree = "<group>";
+		};
+		3B97A74F19DC07BE005914F6 /* score */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A75019DC07BE005914F6 /* HAIL_ScoreVC.h */,
+				3B97A75119DC07BE005914F6 /* HAIL_ScoreVC.m */,
+				3B97A75219DC07BE005914F6 /* HAIL_ScoreVC.xib */,
+				3B97A75319DC07BE005914F6 /* HAIL_ScoreViewOLD.h */,
+				3B97A75419DC07BF005914F6 /* HAIL_ScoreViewOLD.m */,
+			);
+			path = score;
+			sourceTree = "<group>";
+		};
+		3B97A75519DC07BF005914F6 /* wheel */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A75619DC07BF005914F6 /* HAIL_WheelVC.h */,
+				3B97A75719DC07BF005914F6 /* HAIL_WheelVC.m */,
+				3B97A75819DC07BF005914F6 /* HAIL_WheelVC.xib */,
+				3B97A75919DC07BF005914F6 /* HAIL_WheelView.h */,
+				3B97A75A19DC07BF005914F6 /* HAIL_WheelView.m */,
+			);
+			path = wheel;
+			sourceTree = "<group>";
+		};
+		3B97A76219DC07BF005914F6 /* model portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A71419DC07BE005914F6 /* HAIL_AudioPlayerNotificationNames.m */,
+				3B97A71519DC07BE005914F6 /* HAIL_AudioPlayerProtocol.h */,
+				3B97A71319DC07BE005914F6 /* HAIL_AudioDataTest.m */,
+				3B97A71119DC07BE005914F6 /* HAIL_AudioData.h */,
+				3B97A71219DC07BE005914F6 /* HAIL_AudioData.m */,
+				3B97A71619DC07BE005914F6 /* HAIL_AudioSourceProtocol.h */,
+			);
+			name = "model portfolio";
+			path = "HAIL/src/model portfolio";
+			sourceTree = "<group>";
+		};
+		3B97A76319DC07BF005914F6 /* system portfolio */ = {
+			isa = PBXGroup;
+			children = (
+				3BB47C281A2C0EBE00B4C86E /* TAAE */,
+				3B97A76419DC07BF005914F6 /* FT_Helpers.h */,
+				3B97A76519DC07BF005914F6 /* FT_Helpers.m */,
+			);
+			name = "system portfolio";
+			path = "HAIL/src/system portfolio";
+			sourceTree = "<group>";
+		};
+		3B97A7A719DC0B82005914F6 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B4B77581A225F2500387C96 /* UIView+AutoLayout */,
+				3BF84EDB19DC0D9A001F6401 /* TheAmazingAudioEngine.xcodeproj */,
+				3B97A79A19DC0838005914F6 /* OCMockitoIOS.framework */,
+				3B97A79819DC082F005914F6 /* OCHamcrestIOS.framework */,
+				3B97A70419DC0758005914F6 /* Accelerate.framework */,
+				3B97A70519DC0758005914F6 /* AudioToolbox.framework */,
+				3B97A70619DC0758005914F6 /* AVFoundation.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		3BB47C261A2C0AB200B4C86E /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A71B19DC07BE005914F6 /* HAIL_PresentationLogic.h */,
+				3B97A71C19DC07BE005914F6 /* HAIL_PresentationLogic.m */,
+				3B4D6D621A2C1C280091D035 /* HAIL_EditorPresentation.h */,
+				3B4D6D631A2C1C280091D035 /* HAIL_EditorPresentation.m */,
+				3BC196F21A377B4400AA6FDA /* HAIL_VoicePresentation.h */,
+				3BC196F31A377B4400AA6FDA /* HAIL_VoicePresentation.m */,
+				3BC196EF1A37785E00AA6FDA /* HAIL_PartPresentation.h */,
+				3BC196F01A37785E00AA6FDA /* HAIL_PartPresentation.m */,
+				3B0365391A20DF3B004A9353 /* HAIL_PerformancePresentation.h */,
+				3B0365371A20DF13004A9353 /* HAIL_PerformancePresentation.m */,
+				3B03653A1A20F999004A9353 /* HAIL_ScorePresentation.h */,
+				3B03653B1A20FA22004A9353 /* HAIL_ScorePresentation.m */,
+				3B43FE7E1A3119BC0098E635 /* HAIL_EventPresentation.h */,
+				3B43FE7F1A3119BC0098E635 /* HAIL_EventPresentation.m */,
+				3B97A72019DC07BE005914F6 /* HAIL_Presentation.h */,
+				3B97A72119DC07BE005914F6 /* HAIL_Presentation.m */,
+			);
+			name = presentation;
+			sourceTree = "<group>";
+		};
+		3BB47C271A2C0AF500B4C86E /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A71E19DC07BE005914F6 /* HAIL_DomainLogic.h */,
+				3B97A71F19DC07BE005914F6 /* HAIL_DomainLogic.m */,
+				3B7620FD1A1792E000D387AA /* performance */,
+				3BF95DB91A122C65005FB8A9 /* music library */,
+				3B7620FC1A17927B00D387AA /* scores */,
+				3BF95DB71A122B16005FB8A9 /* voices */,
+				3BF95DB61A122AB0005FB8A9 /* parts */,
+				3BF95DBA1A122CB6005FB8A9 /* audio */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		3BB47C281A2C0EBE00B4C86E /* TAAE */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A75C19DC07BF005914F6 /* HAIL_TAAEAudioFile.h */,
+				3B97A75D19DC07BF005914F6 /* HAIL_TAAEAudioFile.m */,
+				3B97A75E19DC07BF005914F6 /* HAIL_TAAEAudioFileTest.m */,
+				3B97A75F19DC07BF005914F6 /* HAIL_TAAEAudioPlayer.h */,
+				3B97A76019DC07BF005914F6 /* HAIL_TAAEAudioPlayer.m */,
+				3B97A76119DC07BF005914F6 /* HAIL_TAAEAudioPlayerTest.m */,
+				3B97A76619DC07BF005914F6 /* FT_TAAEAudioEngine.h */,
+				3B97A76719DC07BF005914F6 /* FT_TAAEAudioEngine.m */,
+			);
+			name = TAAE;
+			sourceTree = "<group>";
+		};
+		3BB47C291A2C0F2D00B4C86E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3B3455D11A2BB51100099302 /* HAIL_EditorView.h */,
+				3B3455D21A2BB51100099302 /* HAIL_EditorView.m */,
+				3BE293F61A31CCDF00494A7E /* HAIL_PlayButton.h */,
+				3BE293F71A31CCDF00494A7E /* HAIL_PlayButton.m */,
+				3B484F431A2E3E16003A9779 /* HAIL_ScrollView.h */,
+				3B484F441A2E3E16003A9779 /* HAIL_ScrollView.m */,
+				3B2069201A2C7AD50063317B /* HAIL_PartView.h */,
+				3B2069211A2C7AD50063317B /* HAIL_PartView.m */,
+				3B2069231A2C7C3F0063317B /* HAIL_VoiceView.h */,
+				3B2069241A2C7C3F0063317B /* HAIL_VoiceView.m */,
+				3B97A73519DC07BE005914F6 /* HAIL_PerformanceView.h */,
+				3B97A73619DC07BE005914F6 /* HAIL_PerformanceView.m */,
+				3B8591301A29159000B36D3C /* HAIL_ScoreView.h */,
+				3B8591311A2915BD00B36D3C /* HAIL_ScoreView.m */,
+				3B43FE7B1A3118A00098E635 /* HAIL_EventView.h */,
+				3B43FE7C1A3118A00098E635 /* HAIL_EventView.m */,
+				3B131C2D1A2A015F0015CC1E /* HAIL_PresentationView.h */,
+				3B131C2B1A2A013D0015CC1E /* HAIL_PresentationView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		3BB47C2A1A2C0F4500B4C86E /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A73919DC07BE005914F6 /* HAIL_DomainController.h */,
+				3B97A73A19DC07BE005914F6 /* HAIL_DomainController.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		3BF84EDC19DC0D9A001F6401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF84EE019DC0D9A001F6401 /* libTheAmazingAudioEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF95DB61A122AB0005FB8A9 /* parts */ = {
+			isa = PBXGroup;
+			children = (
+				3BFDAEA51A16049D006037CB /* HAIL_PartLibrary.h */,
+				3BFDAEA31A160477006037CB /* HAIL_PartLibrary.m */,
+				3BF95DC11A123A08005FB8A9 /* HAIL_Part.h */,
+				3BF95DBF1A1239E2005FB8A9 /* HAIL_Part.m */,
+			);
+			name = parts;
+			sourceTree = "<group>";
+		};
+		3BF95DB71A122B16005FB8A9 /* voices */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A72419DC07BE005914F6 /* HAIL_VoiceLibrary.h */,
+				3B97A72519DC07BE005914F6 /* HAIL_VoiceLibrary.m */,
+				3BF95DC41A123F83005FB8A9 /* HAIL_Voice.h */,
+				3BF95DC21A123F59005FB8A9 /* HAIL_Voice.m */,
+			);
+			name = voices;
+			sourceTree = "<group>";
+		};
+		3BF95DB81A122BD3005FB8A9 /* business */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A71719DC07BE005914F6 /* HAIL_BusinessLogic.h */,
+				3B97A71819DC07BE005914F6 /* HAIL_BusinessLogic.m */,
+			);
+			name = business;
+			sourceTree = "<group>";
+		};
+		3BF95DB91A122C65005FB8A9 /* music library */ = {
+			isa = PBXGroup;
+			children = (
+				3BECFD2E1A156186006F77F0 /* HAIL_MusicLibrary.h */,
+				3BECFD2C1A156138006F77F0 /* HAIL_MusicLibrary.m */,
+			);
+			name = "music library";
+			sourceTree = "<group>";
+		};
+		3BF95DBA1A122CB6005FB8A9 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				3B97A72619DC07BE005914F6 /* HAIL_AudioLibrary.h */,
+				3B97A72719DC07BE005914F6 /* HAIL_AudioLibrary.m */,
+				3B97A72819DC07BE005914F6 /* HAIL_Synthesizer.h */,
+				3B97A72919DC07BE005914F6 /* HAIL_Synthesizer.m */,
+			);
+			name = audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B97A6D019DC064F005914F6 /* HAIL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B97A6F419DC064F005914F6 /* Build configuration list for PBXNativeTarget "HAIL" */;
+			buildPhases = (
+				3B97A6CD19DC064F005914F6 /* Sources */,
+				3B97A6CE19DC064F005914F6 /* Frameworks */,
+				3B97A6CF19DC064F005914F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BF84EE219DC0DA5001F6401 /* PBXTargetDependency */,
+			);
+			name = HAIL;
+			productName = HAIL;
+			productReference = 3B97A6D119DC064F005914F6 /* HAIL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B97A6E919DC064F005914F6 /* HAILTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B97A6F719DC064F005914F6 /* Build configuration list for PBXNativeTarget "HAILTests" */;
+			buildPhases = (
+				3B97A6E619DC064F005914F6 /* Sources */,
+				3B97A6E719DC064F005914F6 /* Frameworks */,
+				3B97A6E819DC064F005914F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B97A6EC19DC064F005914F6 /* PBXTargetDependency */,
+			);
+			name = HAILTests;
+			productName = HAILTests;
+			productReference = 3B97A6EA19DC064F005914F6 /* HAILTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B97A6C919DC064F005914F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Formigas;
+				TargetAttributes = {
+					3B97A6D019DC064F005914F6 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = QP5N93UU9F;
+					};
+					3B97A6E919DC064F005914F6 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 3B97A6D019DC064F005914F6;
+					};
+				};
+			};
+			buildConfigurationList = 3B97A6CC19DC064F005914F6 /* Build configuration list for PBXProject "HAIL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B97A6C819DC064F005914F6;
+			productRefGroup = 3B97A6D219DC064F005914F6 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3BF84EDC19DC0D9A001F6401 /* Products */;
+					ProjectRef = 3BF84EDB19DC0D9A001F6401 /* TheAmazingAudioEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3B97A6D019DC064F005914F6 /* HAIL */,
+				3B97A6E919DC064F005914F6 /* HAILTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3BF84EE019DC0D9A001F6401 /* libTheAmazingAudioEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTheAmazingAudioEngine.a;
+			remoteRef = 3BF84EDF19DC0D9A001F6401 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B97A6CF19DC064F005914F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B97A78419DC07BF005914F6 /* HAIL_KeysVC.xib in Resources */,
+				3B97A78A19DC07BF005914F6 /* HAIL_ScoreVC.xib in Resources */,
+				3B97A79D19DC08FE005914F6 /* audio in Resources */,
+				3B97A78D19DC07BF005914F6 /* HAIL_WheelVC.xib in Resources */,
+				3B97A78019DC07BF005914F6 /* HAIL_EditingContainerController.xib in Resources */,
+				3B97A7A919DC0BCB005914F6 /* assets.xcassets in Resources */,
+				3B97A78719DC07BF005914F6 /* HAIL_PerformanceVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B97A6E819DC064F005914F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B97A6CD19DC064F005914F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B03653C1A20FA22004A9353 /* HAIL_ScorePresentation.m in Sources */,
+				3B97A79119DC07BF005914F6 /* HAIL_TAAEAudioPlayer.m in Sources */,
+				3B97A79319DC07BF005914F6 /* FT_Helpers.m in Sources */,
+				3B2069221A2C7AD50063317B /* HAIL_PartView.m in Sources */,
+				3BF95DC31A123F59005FB8A9 /* HAIL_Voice.m in Sources */,
+				3B43FE801A3119BC0098E635 /* HAIL_EventPresentation.m in Sources */,
+				3B97A77E19DC07BF005914F6 /* HAIL_DomainController.m in Sources */,
+				3BC1AA621A35BE2C0033BB77 /* HAIL_Event.m in Sources */,
+				3B97A77519DC07BF005914F6 /* HAIL_AudioLibrary.m in Sources */,
+				3B97A78E19DC07BF005914F6 /* HAIL_WheelView.m in Sources */,
+				3B8591321A2915BD00B36D3C /* HAIL_ScoreView.m in Sources */,
+				3B2069251A2C7C3F0063317B /* HAIL_VoiceView.m in Sources */,
+				3B97A77419DC07BF005914F6 /* HAIL_VoiceLibrary.m in Sources */,
+				3B97A79419DC07BF005914F6 /* FT_TAAEAudioEngine.m in Sources */,
+				3B97A78819DC07BF005914F6 /* HAIL_PerformanceViewOLD.m in Sources */,
+				3B97A77619DC07BF005914F6 /* HAIL_Synthesizer.m in Sources */,
+				3B131C2C1A2A013D0015CC1E /* HAIL_PresentationView.m in Sources */,
+				3B97A76B19DC07BF005914F6 /* HAIL_AudioData.m in Sources */,
+				3B97A77C19DC07BF005914F6 /* HAIL_PerformanceView.m in Sources */,
+				3B97A78619DC07BF005914F6 /* HAIL_PerformanceVC.m in Sources */,
+				3B97A77F19DC07BF005914F6 /* HAIL_EditingContainerController.m in Sources */,
+				3BC196F41A377B4400AA6FDA /* HAIL_VoicePresentation.m in Sources */,
+				3B97A77819DC07BF005914F6 /* HAIL_AppDelegate.m in Sources */,
+				3B97A77019DC07BF005914F6 /* HAIL_PresentationLogic.m in Sources */,
+				3B97A78F19DC07BF005914F6 /* HAIL_TAAEAudioFile.m in Sources */,
+				3B97A77119DC07BF005914F6 /* HAIL_DomainLogic.m in Sources */,
+				3B0365381A20DF13004A9353 /* HAIL_PerformancePresentation.m in Sources */,
+				3BC196F11A37785E00AA6FDA /* HAIL_PartPresentation.m in Sources */,
+				3BE293F81A31CCDF00494A7E /* HAIL_PlayButton.m in Sources */,
+				3B97A78219DC07BF005914F6 /* HAIL_SynchronizedScrollContentView.m in Sources */,
+				3B97A77219DC07BF005914F6 /* HAIL_Presentation.m in Sources */,
+				3BECFD2D1A156138006F77F0 /* HAIL_MusicLibrary.m in Sources */,
+				3B3455D31A2BB51100099302 /* HAIL_EditorView.m in Sources */,
+				3B97A76E19DC07BF005914F6 /* HAIL_BusinessLogic.m in Sources */,
+				3BFDAEA41A160477006037CB /* HAIL_PartLibrary.m in Sources */,
+				3B4D6D641A2C1C280091D035 /* HAIL_EditorPresentation.m in Sources */,
+				3B97A78C19DC07BF005914F6 /* HAIL_WheelVC.m in Sources */,
+				3B97A78319DC07BF005914F6 /* HAIL_KeysVC.m in Sources */,
+				3B3455D61A2BD6A100099302 /* HAIL_BusinessController.m in Sources */,
+				3BF95DC01A1239E2005FB8A9 /* HAIL_Part.m in Sources */,
+				3B97A78919DC07BF005914F6 /* HAIL_ScoreVC.m in Sources */,
+				3B484F451A2E3E16003A9779 /* HAIL_ScrollView.m in Sources */,
+				3B43FE7D1A3118A00098E635 /* HAIL_EventView.m in Sources */,
+				3B97A78B19DC07BF005914F6 /* HAIL_ScoreViewOLD.m in Sources */,
+				3B97A76819DC07BF005914F6 /* HAIL_Score.m in Sources */,
+				3B97A76F19DC07BF005914F6 /* HAIL_Performance.m in Sources */,
+				3B97A78519DC07BF005914F6 /* HAIL_KeysView.m in Sources */,
+				3B97A77319DC07BF005914F6 /* HAIL_ScoreLibrary.m in Sources */,
+				3B97A77919DC07BF005914F6 /* main.m in Sources */,
+				3B97A77A19DC07BF005914F6 /* HAIL_ViewController.m in Sources */,
+				3B4B775B1A225F2500387C96 /* UIView+AutoLayout.m in Sources */,
+				3B97A78119DC07BF005914F6 /* HAIL_InterfaceConfiguration.m in Sources */,
+				3B97A76D19DC07BF005914F6 /* HAIL_AudioPlayerNotificationNames.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B97A6E619DC064F005914F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B97A79719DC07EE005914F6 /* HAIL_AudioDataTest.m in Sources */,
+				3B97A79519DC07D6005914F6 /* HAIL_TAAEAudioFileTest.m in Sources */,
+				3B97A79619DC07DA005914F6 /* HAIL_TAAEAudioPlayerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B97A6EC19DC064F005914F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B97A6D019DC064F005914F6 /* HAIL */;
+			targetProxy = 3B97A6EB19DC064F005914F6 /* PBXContainerItemProxy */;
+		};
+		3BF84EE219DC0DA5001F6401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TheAmazingAudioEngine;
+			targetProxy = 3BF84EE119DC0DA5001F6401 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B97A6F219DC064F005914F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"TheAmazingAudioEngine-master/TheAmazingAudioEngine/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3B97A6F319DC064F005914F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"TheAmazingAudioEngine-master/TheAmazingAudioEngine/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B97A6F519DC064F005914F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HAIL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3B97A6F619DC064F005914F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HAIL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3B97A6F819DC064F005914F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCHamcrest-4.0.1",
+					"$(PROJECT_DIR)/OCMockito-1.3.1",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HAILTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAIL.app/HAIL";
+			};
+			name = Debug;
+		};
+		3B97A6F919DC064F005914F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCHamcrest-4.0.1",
+					"$(PROJECT_DIR)/OCMockito-1.3.1",
+				);
+				INFOPLIST_FILE = HAILTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HAIL.app/HAIL";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B97A6CC19DC064F005914F6 /* Build configuration list for PBXProject "HAIL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B97A6F219DC064F005914F6 /* Debug */,
+				3B97A6F319DC064F005914F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B97A6F419DC064F005914F6 /* Build configuration list for PBXNativeTarget "HAIL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B97A6F519DC064F005914F6 /* Debug */,
+				3B97A6F619DC064F005914F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B97A6F719DC064F005914F6 /* Build configuration list for PBXNativeTarget "HAILTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B97A6F819DC064F005914F6 /* Debug */,
+				3B97A6F919DC064F005914F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B97A6C919DC064F005914F6 /* Project object */;
+}

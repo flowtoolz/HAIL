@@ -1,0 +1,10 @@
+Customary music software is rather technically oriented and heavily aligned to the needs of producers. Creative users, on the other hand, especially musicians and children, are forced to deal with technical details and also tend to get lost in those instead of following their ideas and intuitions. So we commit to the following axiomatic requirement as our leading principle: 
+\begin{quote}
+Creating is the highest form of playing. Software that is supposed to support a creative process must feel like a game or it fails its purpose. Only if it is as fun as gaming does it unleash human creativity, otherwise, it just supports technical production.
+\end{quote}
+
+The decisions that should be left to the user are exactly the ones that belong to his creative process and that excite him. He is not provided with the highest- but with the most meaningful flexibility. That implies minimalism for features and presentation but perfectionism for functionality and interaction.
+
+That is why we understand interaction design as a process of leaving things out. When a developer doesn't dare to make hard decisions and instead provides everything users might desire, he actually avoids the difficult design phase.
+
+A developer can only regulate the complexity of an application if he has determined the relevance of each of its building blocks. Therefore, one of the most important preconditions of appropriate interaction design is to radically set priorities. This demands a clear vision of the application concept, including a deep understanding of user and domain.

@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+
+\usepackage[intlimits]{amsmath}
+%\usepackage[scaled=.92]{helvet}
+%\usepackage{times}
+\usepackage{graphicx}
+%\usepackage{parskip}
+\usepackage[labelfont=bf,textfont=it]{caption}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage[numbers]{natbib}
+\usepackage{multirow}
+%\usepackage[in]{fullpage}
+\usepackage{wrapfig}
+
+\title{HAIL -- Notes}
+\author{Sebastian Fichtner}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Audio Engine}
+Possible ways of scheduling in a sequencer:
+\begin{itemize}
+\item subclass AEAudioFilePlayer
+\item use AEAudioUnitChannel with the AUFilePlayer and CA scheduling
+\item write a new AudioFilePlayer as an AEAudioPlayable
+\item write a new AudioFilePlayer as an AEAudioPlayable that uses an AEAudio file player internally
+\end{itemize}
+
+\pagebreak
+
+\section{Intuitiv Identifizierte Probleme}
+
+Der Anlass, ein Konzept f\"{u}r Musiksoftware zu entwickeln stammt aus den zum Teil frustrierenden Erfahrungen die befreundete Musiker und ich mit Programmen wie Logic Pro, Reason, Live, virtuellen Intrumenten, Samplern und Audio Editing Tools gemacht haben. Im folgenden werden Probleme aufgelistet die typisch f\"{u}r das Arbeiten mit existierender Software sind und damit nach einem neuen Ansatz verlangen. M\"{o}gliche L\"{o}sungen ergeben sich meist schon direkt aus der Problemfeststellung.
+
+Die Liste entstand, so wie sie hier formuliert ist, als Initialz\"{u}ndung des ganzen Projektes und basierte nur auf Erfahrung und Intuition. In die Masterarbeit flie\ss en vor allem die ins Englische \"{u}bertragenen Punkte ein.
+
+\subsection{Broken Interaction}
+\begin{enumerate}
+\item The user is presented with countless buttons and options, which has the following implications:
+\begin{itemize}
+\item Comprehension and overview are impeded.
+\item Only a small fraction of interaction options is actually used. Users do the same actions repeatedly. Thus, unused options waste screen space.
+\item Screen space is further wasted by window- and option bars of  applications and the operating system.
+\item The user gets distracted from his actual creative work.
+\end{itemize}
+\item The dimensions of GUI-elements are fixed sizes in pixels. With high screen resolution, they become hard to read and hard to interact with.
+\item The GUI is based on the WIMP-schema.\\(Window, Icons, Menus, Pointers)
+\item The app spreads over lots of windows which must be arranged by the user. (arrange-view, mixer, signal routing, audio files, instruments, sampler, MIDI editor, external applications connected through ReWire~...)
+\item When editing (arranging) content, the user often has to zoom and scroll horizontally and vertically. That consumes time and impedes overview. (Example: 4 input elements in the arrange-view of Logic Pro)
+\end{enumerate}
+
+\subsection{Broken Functional Model}
+
+\begin{enumerate}
+\item Metaphors are not related to music itself but to real studio hardware. That causes unnecessary indirections and restrictions and is also an antiquated approach.
+\item Arranging, MIDI editing, creating sampler instruments and similar tasks are presented as profoundly different, in different windows, with different metaphors and interaction concepts. The reasons for that are more technical and less content related. The user is confronted with artificial and superfluous distinctions because these tasks share the same principles.
+\item For the presentation of content, hardly any data gets aggregated. A consistent hierarchical model does not exist. Hierarchical approaches remain shallow, cumbersome and irrelevant to the overarching concept, although music is hierarchically structured (for example: recording, tone, chord, bar, cadence, song part, song, album).
+\item The way that audio material goes from recording to arranging and output is  modeled cumbersomely and presented  inconsistently and unclear.
+\item Project files are not based on an open XML format. Projects can only be edited with the software with which they were created. It is impossible to just edit them in a text editor. Other developers cannot program additional editors.
+\item When mixing, the volume of a single source can only be changed absolutely not relatively, often leading to a mix that does break or not exploit the available volume range. Such a mix must then be corrected by adjusting every single source that contributes to the mix. During the creative phase, which takes much longer then the final mixing, these adjustments are an annoying waste of time.
+\item The graphical display of volumes as absolute levels misleads the user to make a rather abstract judgement of the sound. The evaluation of a mix should be done with the ears and not be biased by the knowledge of gain levels. That is why experienced sound engineers often mix with their eyes closed.
+\item Creating chords from your own recordings and then treating them as atomic tones is impossible or cumbersome.
+\item Working with your own samples or even creating sample instruments is cumbersome, heavily application dependent and demands quite some learning.
+\end{enumerate}
+
+\subsection{Kollaboration}
+
+\begin{enumerate}
+\item Das kollaborative Arbeiten an Projekten, etwa in Bands, wird nicht unterst\"{u}tzt, weil mindestens eine der folgenden Voraussetzungen nicht erf\"{u}llt ist:
+\begin{itemize}
+\item Alle k\"{o}nnen und wollen sich die Software leisten.
+\item Auf allen Rechnern ist die Software lauff\"{a}hig.
+\item Alle k\"{o}nnen die Software bedienen und haben auch Spa{\ss} daran.
+\item Konsolidieren verschiedener Projekte/Ideen ist f\"{u}r alle einfach m\"{o}glich.
+\item Die Software unterst\"{u}tzt kollaborative Entscheidungsfindung.
+\end{itemize}
+\item Samplebibliotheken und Projekte sind dezentral auf jedem Benutzerrechner gespeichert, mit folgenden Implikationen:
+\begin{itemize}
+\item Lange Installationszeiten bei jedem Neuerwerb oder Neuaufsetzen des Rechners
+\item Hoher Speicherplatzverbrauch, obwohl nur ein Bruchteil der Samples benutzt wird
+\item Verlust hoher ideeller- und teilweise kommerzieller Werte bei Rechnerschaden 
+\item Umst\"{a}ndliche Distribution  f\"{u}r K\"{u}nstler die Samples anbieten wollen
+\item Fehlender \"{U}berblick \"{u}ber Angebot von Sample-Bibliotheken, geringe Auswahl, kein Erwerb einzelner Samples
+\item Erschwerte Netz-Kooperation
+\item Bearbeiten eines Projektes von verschiedenen (mobilen!) Endger\"{a}ten ist unm\"{o}glich oder sehr umst\"{a}ndlich.
+\end{itemize}
+\item Exportieren, Importieren und vor allem das Kombinieren verschiedener Teile aus verschiedenen Projekten ist unm\"{o}glich oder sehr umst\"{a}ndlich.
+\item Das Mitnehmen (USB-Stick) oder Mailen der Software und sofortige Ausf\"{u}hren auf anderen Rechnern ist aus vielen Gr\"{u}nden unm\"{o}glich.
+\end{enumerate}
+
+\subsection{Umgang mit Audiodaten}
+
+\begin{enumerate}
+\item Das Management der tats\"{a}chlich auf der Festplatte liegenden Klangdateien ist umst\"{a}ndlich, unzureichend und zu wenig in den Arbeitsfluss integriert. Reale Daten und Referenzen werden unzureichend unterschieden. Das Volumen ungenutzter Daten w\"{a}chst, ohne manuelle Verwaltung \"{u}ber das Betriebssystem (Finder, Explorer), unbemerkt an.
+\item Trotz Undo-Funktion sind Audiobearbeitungen meist destruktiv und laden nicht zum Experimentieren ein. (Bsp: Reverse, Silence, Gain, Pitch in Logic Pro)
+\item Automatisches adaptives Vorberechnen der Klangbausteine eines Projektes wird nicht durchgef\"{u}hrt, unter anderem, weil kein hierarchischer Aufbau existiert. Es wird h\"{o}chstens eine Freeze-Option f\"{u}r ganze Spuren angeboten, die manuell benutzt werden muss.
+\item Audio Stretching im Zusammenhang mit Tempo\"{a}nderungen ist nicht automatisch, destruktiv und umst\"{a}ndlich.
+\end{enumerate}
+
+\end{document}

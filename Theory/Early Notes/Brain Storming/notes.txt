@@ -1,0 +1,16 @@
+* library and reuse -> tempounabhängigkeit für kombinieren
+
+* Others have presumed, that I (the author of this report) settled for this platform simply because I had access to it. I want to point out that I chose to buy such a device, learn iOS development and work as an iOS developer for the sole purpose of investigating this vision of music software. Actually, I continue to be an outspoken critic of tablet computers and feel that their potential remains not only widely untapped but also distinctly limited.
+
+* wie soll HAIL den refinement approach des globalen komponierens unterstützen?
+    (erst globale struktur, dann details. bisher: eher inkrementell also analytisch)
+
+* platform... ipad is widely used by people interested in music making
+
+* platform... managing environment and tool .... Tablet computers, on the other hand, not only prevent the application developer from introducing such problems, they also avoid them by the nature of their hardware and operating systems. There is not even an application window to manage, let alone windows within an application.
+
+* platform... hail doable: audio bus: collaboration of focused apps, openness...
+* platform... scan these papers! do they inform our platform decision?
+	2005: fragmentation of attention \cite{Oulasvirta2005}
+	2010: gestural interfaces: a step back? \cite{Norman2010}
+	2011: the ipad \cite{Geyer2011}
